@@ -22,6 +22,7 @@ def index():
     generated_uuid = str(uuid.uuid1())
     unique_filename = generated_uuid + "~" + "${filename}"
     try:
+        print(f"images/{unique_filename}")
         response = s3_client.generate_presigned_post(Bucket="shopify-repository", Key=f"images/{unique_filename}", Fields=None, ExpiresIn=300, \
         Conditions=[["starts-with", "$success_action_redirect", ""]])
     except botocore.exceptions.ClientError as e:
@@ -37,6 +38,11 @@ def index():
 @app.route("/success", methods=["GET"])
 def add_success():
     return render_template("add-success.html")
+
+@app.route("/about", methods=["GET"])
+@app.route("/about.html", methods=["GET"])
+def about():
+    return render_template("about.html")
 
 
 @app.route("/uploaded", methods=["GET", "POST"])

@@ -40,6 +40,40 @@ body {
   margin-bottom: 50px;
 }
 
+.intro-heading{
+  font-family: 'Londrina Solid', cursive;
+  color: #707bff;
+  font-size: 1.9em;
+}
+
+.intro{
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  display: block;
+  line-height: 200%;
+}
+
+.profile-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+  margin-bottom: 1%;
+  width: 15%;
+}
+
+.linkedin-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+  width: 3.7%;
+}
+
 
 
 
