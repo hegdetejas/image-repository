@@ -99,7 +99,7 @@ def uploaded_images():
             # Get filename from entire URL of file
             filename = data["image_src"].split("/")[-1]
             # Initialise s3 client
-            s3_client = boto3.resource("_client")
+            s3_client = boto3.resource("s3")
             # Get specific object from s3 bucket
             obj = s3_client.Object("shopify-repository", f"images/{filename}")
             # Delete object
