@@ -10,13 +10,7 @@ Web Services S3 Storage Bucket. I hope you enjoy it :)
 
 ## Usage
 
-To run this application, first clone the repository and ensure that boto3 and flask are installed by your package manager (I use
-pip). Then, cd into the folder that was created by the clone and type `python server.py`. This should start the local web server
-and provide you with an IP address to copy and paste into the browser (should be http://0.0.0.0:5000/). The homepage allows you
-to choose a file to upload. The files must be of type .jpg or .png. If an invalid file format is inputted, the user is informed
-by the alert function from JavaScript. The Uploaded Images tab retrieves all the files from the AWS S3 Bucket and displays them
-to the user. An image can be deleted by clicking on it and confirming. Finally, there's an About Me page that has a little bit
-of information and a link to my LinkedIn page.
+Head on over to http://3.94.182.198:5000/
 
 
 **********************************************************************************************************************************
